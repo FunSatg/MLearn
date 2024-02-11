@@ -57,8 +57,11 @@ button:hover {
 }
 
 #result {
+    padding-bottom: 15px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-family: "Urbanist", sans-serif;
+
 }
 
 .nav {

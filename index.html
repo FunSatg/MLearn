@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="script.js" defer></script>
+    <title>Square Root Calculator</title>
+    
+</head>
+
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">MLearner</a>
+
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Maths</a></li>
+        </ul>
+
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Square Root Calculator</h1>
+        <input type="number" id="number" placeholder="Enter a number">
+        <button onclick="calculateSquareRoot()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateSquareRoot() {
+            var number = document.getElementById("number").value;
+            if (number >= 0) {
+                var result = Math.sqrt(number);
+                document.getElementById("result").innerHTML = "Square root of " + number + " is " + result.toFixed(4);
+            } else {
+                document.getElementById("result").innerHTML = "Please enter a non-negative number";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

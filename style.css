@@ -183,7 +183,13 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-
+    body {
+        background-image: url(background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        object-fit: fill;
+    }
+    
     .nav .navOpenBtn,
     .nav .navCloseBtn {
         display: block;

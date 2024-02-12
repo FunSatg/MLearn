@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="\style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <script src="\script.js" defer></script>
+  <title>Power Calculator</title>
+
+</head>
+
+<body>
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="#" class="logo">MLearner</a>
+
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="https://funsatg.github.io/MLearn/">Home</a></li>
+      <li><a href="/Power/index.html">Power Calculator</a></li>
+    </ul>
+
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+      <i class="uil uil-search search-icon"></i>
+      <input type="text" placeholder="Search here..." />
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Power Calculator</h1>
+    <div>
+      <label class="base" for="base">Enter the base number:</label>
+      <input type="number" id="base" placeholder="Enter base number">
+    </div>
+    <div>
+      <label for="exponent">Enter the exponent:</label>
+      <input type="number" id="exponent" placeholder="Enter exponent">
+    </div>
+    <button onclick="calculatePower()">Calculate</button>
+    <div id="result"></div>
+  </div>
+  <script src="power.js"></script>
+</body>
+
+</html>

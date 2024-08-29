@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Factors of a Number</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">MLearn</a>
+
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="https://funsatg.github.io/MLearn/">Home</a></li>
+            <li><a href="https://funsatg.github.io/MLearn/power.html">Power Calculator</a></li>
+        </ul>
+
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Search here..." />
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Find Factors of a Number</h1>
+        <input type="number" id="number" placeholder="Enter a number">
+        <button onclick="findFactors()">Find Factors</button>
+        <div id="result"></div>
+    </div>
+    <script src="factor.js"></script>
+</body>
+</html>
